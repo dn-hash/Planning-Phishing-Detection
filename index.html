@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="th">
 
@@ -103,4 +104,110 @@
     <script src="script.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ตรวจจับเว็บไซต์ฟิชชิ่ง - วิเคราะห์ URL เพื่อระบุความเสี่ยงจากการหลอกลวง">
+    <title>🛡️ Phishing Detector - ตรวจจับเว็บฟิชชิ่ง</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">🛡️</span>
+                <h1>Phishing Detector</h1>
+            </div>
+            <p class="tagline">ตรวจจับเว็บไซต์ฟิชชิ่งด้วย AI</p>
+        </header>
+        <main class="main-content">
+            <section class="input-section glass-card">
+                <h2>🔍 ตรวจสอบ URL</h2>
+                <div class="input-wrapper">
+                    <input 
+                        type="url" 
+                        id="url-input" 
+                        placeholder="วาง URL ที่ต้องการตรวจสอบ เช่น https://example.com"
+                        autocomplete="off"
+                    >
+                    <button id="scan-btn" class="scan-button">
+                        <span class="btn-text">สแกน</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                </div>
+                <div class="quick-actions">
+                    <span class="hint">💡 ลองทดสอบ:</span>
+                    <button class="example-btn" data-url="https://google.com">google.com</button>
+                    <button class="example-btn danger" data-url="http://g00gle-secure-login.com/verify-account">ตัวอย่างฟิชชิ่ง</button>
+                </div>
+            </section>
+            <section id="result-section" class="result-section hidden">
+                <div class="result-card glass-card">
+                    <div class="risk-meter">
+                        <div class="meter-ring">
+                            <svg viewBox="0 0 200 200">
+                                <circle class="meter-bg" cx="100" cy="100" r="85"></circle>
+                                <circle class="meter-fill" cx="100" cy="100" r="85" id="meter-circle"></circle>
+                            </svg>
+                            <div class="meter-center">
+                                <span class="score-value" id="score-value">0</span>
+                                <span class="score-label">คะแนนเสี่ยง</span>
+                            </div>
+                        </div>
+                        <div class="risk-badge" id="risk-badge">
+                            <span class="badge-icon"></span>
+                            <span class="badge-text"></span>
+                        </div>
+                    </div>
+                    <div class="analysis-details">
+                        <h3>📊 ผลการวิเคราะห์</h3>
+                        <div class="analyzed-url" id="analyzed-url"></div>
+                        <div class="findings-list" id="findings-list"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="features-section">
+                <h2> วิเคราะห์อะไรบ้าง</h2>
+                <div class="features-grid">
+                    <div class="feature-card glass-card">
+                        <span class="feature-icon">🔗</span>
+                        <h3>โครงสร้าง URL</h3>
+                        <p>ตรวจสอบ subdomain มากเกินไป และความยาวผิดปกติ</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <span class="feature-icon">⚠️</span>
+                        <h3>คำน่าสงสัย</h3>
+                        <p>ค้นหาคำที่พบบ่อยในฟิชชิ่ง เช่น login, verify, secure</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <span class="feature-icon">🎭</span>
+                        <h3>Typosquatting</h3>
+                        <p>ตรวจจับการพิมพ์ชื่อโดเมนผิด เช่น g00gle</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <span class="feature-icon">🌐</span>
+                        <h3>IP & TLD</h3>
+                        <p>ตรวจสอบการใช้ IP แทนโดเมน และ TLD เสี่ยง</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>⚠️ เครื่องมือนี้ช่วยวิเคราะห์เบื้องต้นเท่านั้น ควรใช้วิจารณญาณร่วมด้วย</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+>>>>>>> 5f2a8d7527a1d787d7545ee9c38ddc1fa86bc8be
 </html>
